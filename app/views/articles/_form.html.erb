@@ -1,9 +1,7 @@
-  <%= form_for @article do |f| %>
-    <%= f.label :title %>
-    <%= f.text_field :title %>
+  <%= simple_form_for @article do |f| %>
+    <%= f.input :title %>
     <br />
-    <%= f.label :content %>
-    <%= f.text_area :content %>
+    <%= f.input :content %>
     <br />
     <%= f.submit %>
   <% end %>
