@@ -1,13 +1,5 @@
 <h1>Edit Article</h1>
 
-  <%= form_for @article do |f| %>
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-    <br />
-    <%= f.label :content %>
-    <%= f.text_area :content %>
-    <br />
-    <%= f.submit %>
-  <% end %>
+  <%= render "form" %>
 
   <%= link_to "Home", articles_path %>

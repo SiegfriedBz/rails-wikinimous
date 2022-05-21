@@ -1,5 +1,3 @@
-<h1>Create Article</h1>
-
   <%= form_for @article do |f| %>
     <%= f.label :title %>
     <%= f.text_field :title %>
@@ -9,5 +7,3 @@
     <br />
     <%= f.submit %>
   <% end %>
-
-<%= link_to "Home", articles_path %>
